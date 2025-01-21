@@ -11,15 +11,21 @@
 <body>
 
     <div class="d-flex align-items-center justify-content-center flex-column vh-100">
-        <div class="row pb-5">
+        <div class="row pb-3">
             <div class="col">
-                <button type="button" class="btn btn-dark rounded-circle p-4">Dark</button>
+                <button type="button" class="btn btn-dark rounded-circle px-4 py-3" title="Libras">
+                    <i class="bi bi-hand-index-thumb display-5"></i>
+                </button>
             </div>
             <div class="col">
-                <button type="button" class="btn btn-dark rounded-circle p-4">Dark</button>
+                <button type="button" class="btn btn-dark rounded-circle px-4 py-3" title="Leitor de Texto">
+                    <i class="bi bi-volume-up display-5"></i>
+                </button>
             </div>
             <div class="col">
-                <button type="button" class="btn btn-dark rounded-circle p-4">Dark</button>
+                <button type="button" class="btn btn-dark rounded-circle px-4 py-3" title="Alto Contraste">
+                    <i class="bi bi-highlights display-5"></i>
+                </button>
             </div>
         </div>
         <form>
@@ -32,13 +38,9 @@
                 <label for="exampleInputPassword1">Senha</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
-            <div class="form-group">
+            <div class="form-group pb-3">
                 <label for="exampleConfirmPassword1">Confirmar Senha</label>
                 <input type="password" class="form-control" id="exampleConfirmPassword1" placeholder="Confirm Password">
-            </div>
-            <div class="form-check pb-3">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Continuar Logado</label>
             </div>
             <button type="submit" class="btn btn-primary">Cadastrar</button>
         </form>
