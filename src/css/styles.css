@@ -3,3 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.navbar-brand {
+    position: relative;
+    width: 100px;
+    left: 15px;
+}
