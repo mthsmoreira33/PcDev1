@@ -3,6 +3,11 @@
     --secondary-color: whitesmoke;
 }
 
+/* bg-dark OVERRIDE */
+.bg-dark {
+    background-color: var(--primary-color) !important;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -21,12 +26,17 @@
 }
 
 .btn-outline-secondary {
-    color: var(--secondary-color) !important;
-    border-color: var(--secondary-color) !important;
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 .btn-outline-secondary:hover {
-    color: var(--primary-color) !important;
-    border-color: var(--secondary-color) !important;
-    background-color: var(--secondary-color) !important;
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+
+.full-bleed-down {
+    box-shadow: 0 0 0 100vmax var(--primary-color);
+    clip-path: inset(0 0 -100vmax 0);
 }
