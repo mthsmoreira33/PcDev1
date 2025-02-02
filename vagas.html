@@ -8,6 +8,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Font Awesome icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="src/css/styles.css">
     <title>Vagas</title>
 </head>
@@ -30,26 +32,32 @@
                     <i class="bi bi-list"></i>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav text-center">
+                    <ul class="navbar-nav text-center gap-2">
                         <li class="nav-item">
-                            <a class="nav-link active text-light active" aria-current="page" href="#">Vagas</a>
+                            <a class="nav-link active text-light hover-effect active" aria-current="page" href="#">Vagas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Cursos</a>
+                            <a class="nav-link text-light hover-effect" href="#">Cursos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Plugins</a>
+                            <a class="nav-link text-light hover-effect" href="#">Plugins</a>
                         </li>
                         <li class="nav-item">
-                            <ul class="d-flex text-center align-items-center justify-content-center gap-3">
+                            <ul class="d-flex text-center align-items-center justify-content-around">
                                 <li class="nav-item">
-                                    <a class="nav-link active text-light" aria-current="page" href="#">A</a>
+                                    <a class="nav-link active text-light" aria-current="page" href="#">
+                                        <i class="fa-solid fa-circle-half-stroke hover-effect"></i>
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#">A</a>
+                                    <a class="nav-link text-light" href="#">
+                                        <i class="fa-solid fa-user hover-effect"></i>
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#">A</a>
+                                    <a class="nav-link text-light" href="#">
+                                        <i class="fa-solid fa-right-from-bracket hover-effect"></i>
+                                    </a>
                                 </li>
                             </ul>
                         </li>
@@ -135,42 +143,40 @@
         </div>
     </main>
     <!-- FOOTER -->
-    <footer class="footer bg-dark full-bleed-down">
-        <div class="container-fluid">
-            <div class="row d-flex align-items-center p-4">
-                <div class="col-1">
-                    <a href="#" class="d-flex align-items-center justify-content-center">
-                        <img src="img/logo-pcdev.png" class="img-fluid" alt=" logo do site PcDev">
+    <footer class="footer bg-dark py-4 full-bleed-down">
+        <div class="container-fluid px-4">
+            <div class="row gy-3 align-items-center">
+                <!-- Logo Column -->
+                <div class="col-12 col-md-2 text-center text-md-start">
+                    <a href="#">
+                        <img src="img/logo-pcdev.png" class="img-fluid" alt="logo do site PcDev" style="max-width: 80px;">
                     </a>
                 </div>
-                <div class="col-2 d-flex align-items-center">
-                    <p class="mb-0 text-light">© 2025 Copyright</p>
+                
+                <!-- Copyright Column -->
+                <div class="col-12 col-md-8 text-center">
+                    <p class="text-light mb-0">© 2025 Copyright: Squad 17</p>
                 </div>
-                <div class="col-6">
-
-                </div>
-                <div class="col-3 d-flex justify-content-end align-items-center gap-2">
-                    <!-- social media icons -->
-                    <a href="#"
-                        class="btn btn-outline-secondary d-flex align-items-center justify-content-center social-media-icons">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#"
-                        class="btn btn-outline-secondary d-flex align-items-center justify-content-center social-media-icons">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#"
-                        class="btn btn-outline-secondary d-flex align-items-center justify-content-center social-media-icons">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="#"
-                        class="btn btn-outline-secondary d-flex align-items-center justify-content-center social-media-icons">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#"
-                        class="btn btn-outline-secondary d-flex align-items-center justify-content-center social-media-icons">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+                
+                <!-- Social Media Column -->
+                <div class="col-12 col-md-2">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-2">
+                        <a href="#" class="btn btn-outline-secondary social-media-icons">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary social-media-icons">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary social-media-icons">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary social-media-icons">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary social-media-icons">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,11 +1,6 @@
 :root {
-    --primary-color: black;
+    --primary-color: #212529;
     --secondary-color: whitesmoke;
-}
-
-/* bg-dark OVERRIDE */
-.bg-dark {
-    background-color: var(--primary-color) !important;
 }
 
 * {
@@ -14,15 +9,9 @@
     box-sizing: border-box;
 }
 
-.navbar-brand {
-    position: relative;
-    width: 100px;
-    left: 15px;
-}
-
-.social-media-icons {
-    width: 38px;
-    height: 38px;
+/* COLOR OVERRIDES */
+.bg-dark {
+    background-color: var(--primary-color) !important;
 }
 
 .btn-outline-secondary {
@@ -36,7 +25,49 @@
     background-color: var(--secondary-color);
 }
 
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.form-range::-webkit-slider-thumb {
+    background: var(--primary-color) !important;
+}
+
+.form-range::-moz-range-thumb {
+    background: var(--primary-color) !important;
+}
+
+.navbar-brand {
+    position: relative;
+    width: 100px;
+    left: 15px;
+}
+
+.social-media-icons {
+    width: 38px;
+    height: 38px;
+}
+
 .full-bleed-down {
     box-shadow: 0 0 0 100vmax var(--primary-color);
     clip-path: inset(0 0 -100vmax 0);
+}
+
+/* NAVBAR HOVER EFFECT */
+.hover-effect {
+    transition: all 0.3s ease;
+    padding: 8px;
+    border: 1px solid transparent;
+}
+
+.hover-effect:hover {
+    border: 1px solid white;
+    border-radius: 8px;
 }
