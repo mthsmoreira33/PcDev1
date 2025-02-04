@@ -80,3 +80,8 @@
 .list-unstyled {
     list-style: none;
 }
+
+.img-vagas {
+    max-width: 150px;
+    min-width: 90px;
+}

@@ -34,7 +34,8 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav text-center align-items-center gap-2">
                         <li class="nav-item">
-                            <a class="nav-link active text-light hover-effect active" aria-current="page" href="#">Vagas</a>
+                            <a class="nav-link active text-light hover-effect active" aria-current="page"
+                                href="#">Vagas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light hover-effect" href="#">Cursos</a>
@@ -70,20 +71,13 @@
         <div class="row">
             <aside class="col-lg-3 col-sm-12 pb-5 px-5">
                 <form>
-                    <div class="input-group">
-                        <div class="form-outline">
-                            <div class="row gap-0 align-items-center">
-                                <div class="col-10">
-                                    <input type="search" id="form1" class="form-control" />
-                                </div>
-                                <div class="col-2">
-                                    <button type="button" class="btn btn-primary" title="Pesquisar">
-                                        <i class="bi bi-search"></i>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <label class="form-label" for="form1">Search</label>
+                    <div class="input-group mb-3">
+                        <input type="search" id="form1" class="form-control" placeholder="Pesquisa"
+                            aria-label="Search" />
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-primary" title="Pesquisar">
+                                <i class="bi bi-search"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="input-group mb-3">
@@ -124,22 +118,31 @@
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </aside>
-            <div class="col-lg-6 col-sm-12 px-5">
+            <div class="col-lg-9 col-sm-12 px-5 container-fluid">
                 <ul class="list-unstyled">
                     <li class="list-item">
-                        <div class="card">
+                        <div class="card mb-3">
                             <h5 class="card-header">Featured</h5>
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div class="row">
+                                <div class="col-12 col-sm-3 col-md-3 d-flex align-items-center justify-content-center">
+                                    <img src="img/vaga-img-placeholder.avif" 
+                                    class="img-fluid rounded-circle w-100 p-2 img-vagas"
+                                    alt="Job position image">
+                                </div>
+                                <div class="col-12 col-sm-9 col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Special title treatment</h5>
+                                        <p class="card-text">With supporting text below as a natural lead-in to
+                                            additional
+                                            content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </li>
+                </ul>
             </div>
-            </li>
-            </ul>
-
         </div>
     </main>
     <!-- FOOTER -->
@@ -149,15 +152,16 @@
                 <!-- Logo Column -->
                 <div class="col-12 col-md-2 text-center text-md-start">
                     <a href="#">
-                        <img src="img/logo-pcdev.png" class="img-fluid" alt="logo do site PcDev" style="max-width: 80px;">
+                        <img src="img/logo-pcdev.png" class="img-fluid" alt="logo do site PcDev"
+                            style="max-width: 80px;">
                     </a>
                 </div>
-                
+
                 <!-- Copyright Column -->
                 <div class="col-12 col-md-8 text-center">
                     <p class="text-light mb-0">© 2025 Copyright: Squad 17</p>
                 </div>
-                
+
                 <!-- Social Media Column -->
                 <div class="col-12 col-md-2">
                     <div class="d-flex justify-content-center justify-content-md-end gap-2">
