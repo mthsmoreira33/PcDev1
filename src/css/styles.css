@@ -1,13 +1,22 @@
+/* VARIABLES */
 :root {
     --primary-color: #212529;
+    --primary-color-rgb: 33, 37, 41;
+    /* RGB variable for opacity purposes */
     --secondary-color: whitesmoke;
+    --light-grey-color: #dddfe0;
 }
 
+
+
+/* GLOBAL STYLES */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+
 
 /* COLOR OVERRIDES */
 .bg-dark {
@@ -27,7 +36,7 @@
 
 .btn-primary {
     background-color: var(--primary-color);
-    border-color: var(--primary-color);
+    border-color: var(--secondary-color);
 }
 
 .btn-primary:hover {
@@ -36,6 +45,7 @@
     color: var(--primary-color);
 }
 
+/* Changes the color for the slider */
 .form-range::-webkit-slider-thumb {
     background: var(--primary-color) !important;
 }
@@ -44,12 +54,9 @@
     background: var(--primary-color) !important;
 }
 
-.navbar-brand {
-    position: relative;
-    width: 100px;
-    left: 15px;
-}
 
+
+/* FOOTER: SOCIAL MEDIA ICONS */
 .social-media-icons {
     width: 38px;
     height: 38px;
@@ -59,12 +66,22 @@
     padding: 8px;
 }
 
+/* FOOTER: FULL BLEED DOWN */
 .full-bleed-down {
     box-shadow: 0 0 0 100vmax var(--primary-color);
     clip-path: inset(0 0 -100vmax 0);
 }
 
-/* NAVBAR HOVER EFFECT */
+
+
+/* NAVBAR: LOGO SIZE */
+.navbar-brand {
+    position: relative;
+    width: 100px;
+    left: 15px;
+}
+
+/* NAVBAR: HOVER EFFECT */
 .hover-effect {
     transition: all 0.3s ease;
     padding: 8px;
@@ -81,7 +98,46 @@
     list-style: none;
 }
 
+
+
+/* CARDAS: VAGAS */
 .img-vagas {
     max-width: 150px;
     min-width: 90px;
+}
+
+
+
+/* ASIDE: FILTERS */
+#inline-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--light-grey-color);
+}
+
+#inline-button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#search-box {
+    border: 1px solid var(--light-grey-color);
+}
+
+/* formato field */
+.form-select:focus {
+    border-color: none;
+    box-shadow: 0 0 0 0 rgba(var(--primary-color-rgb), 0);
+}
+
+/* checkboxes */
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Optional: Change the focus state color as well */
+.form-check-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(var(--primary-color-rgb), 0.25);
 }

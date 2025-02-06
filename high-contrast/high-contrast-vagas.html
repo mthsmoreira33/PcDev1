@@ -23,7 +23,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-black border-bottom border-white">
             <div class="container-fluid">
-                <a class="navbar-brand text-light" href="#"><img src="../img/logo-pcdev.png" class="img-fluid"
+                <a class="navbar-brand text-light" href="#"><img src="../img/logo-pcdev-high-contrast.png" class="img-fluid"
                         alt="logo PCDEV com a palavra PC na cor azul claro, a palavra EV na cor laranja e a letra D dividida  em azul em cima e laranja em baixo."></a>
                 <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -67,78 +67,88 @@
             </div>
         </nav>
     </header>
+
     <main class="container py-5">
         <div class="row">
             <aside class="col-lg-3 col-sm-12 pb-5 px-5">
-                <form>
-                    <div class="input-group mb-3">
-                        <input type="search" id="form1" class="form-control" placeholder="Pesquisa"
-                            aria-label="Search" />
-                        <div class="input-group-append">
-                            <button type="button" class="btn btn-primary bg-black border border-white" title="Pesquisar">
-                                <i class="bi bi-search"></i>
-                            </button>
-                        </div>
+                <form class="w-100 d-flex flex-column justify-content-center">
+                    <!-- Search input group -->
+                    <div class="input-group mb-3 w-100">
+                        <input type="search" id="search-box" class="form-control" placeholder="Pesquisa" aria-label="Search">
+                        <button type="button" class="btn btn-primary" title="Pesquisar" id="inline-button">
+                            <i class="bi bi-search"></i>
+                        </button>
                     </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="inputGroupSelect01">Formato</label>
-                        </div>
-                        <select class="custom-select" id="inputGroupSelect01">
+                    <!-- Format select group -->
+                    <div class="input-group mb-3 w-100">
+                        <label class="input-group-text rounded-start" for="format-group-select">Formato</label>
+                        <select class="form-select rounded-end" id="format-group-select">
                             <option selected>Híbrido</option>
                             <option value="1">Remoto</option>
                             <option value="2">Home Office</option>
                             <option value="3">Temporário</option>
                         </select>
                     </div>
-                    <label for="customRange3" class="form-label">Salário</label>
-                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                    <!-- Salary range -->
+                    <div class="w-100 mb-3">
+                        <label for="custom-range-3" class="form-label w-100">Salário</label>
+                        <input type="range" class="form-range w-100" min="0" max="5" step="0.5" id="custom-range-3">
+                    </div>
+                    <!-- Skills checkbox group -->
                     <div class="pb-2">
                         <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Front-End</label>
+                            <input type="checkbox" class="form-check-input" id="skill-check">
+                            <label class="form-check-label" for="skill-check">Front-End</label>
                         </div>
                         <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Back-End</label>
+                            <input type="checkbox" class="form-check-input" id="skill-check">
+                            <label class="form-check-label" for="skill-check">Back-End</label>
                         </div>
                         <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">QA</label>
+                            <input type="checkbox" class="form-check-input" id="skill-check">
+                            <label class="form-check-label" for="skill-check">QA</label>
                         </div>
                         <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">UX/UI Designer</label>
+                            <input type="checkbox" class="form-check-input" id="skill-check">
+                            <label class="form-check-label" for="skill-check">UX/UI Designer</label>
                         </div>
                         <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">DBA</label>
+                            <input type="checkbox" class="form-check-input" id="skill-check">
+                            <label class="form-check-label" for="skill-check">DBA</label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary w-75 mt-4 mx-auto">Filtrar</button>
                 </form>
             </aside>
+            
+            <!-- MAIN SECTION -->
             <div class="col-lg-9 col-sm-12 px-5 container-fluid">
                 <ul class="list-unstyled">
                     <li class="list-item">
+                        <!-- Card -->
                         <div class="card mb-3 bg-black text-white border border-white">
-                            <h5 class="card-header">Featured</h5>
+                            <h5 class="card-header text-center">Featured</h5>
                             <div class="row">
-                                <div class="col-12 col-sm-3 col-md-3 d-flex align-items-center justify-content-center">
-                                    <img src="../img/vaga-img-placeholder.avif"
-                                        class="img-fluid rounded-circle w-100 p-2 img-vagas border border-white" alt="Job position image">
+                                <div class="col-12 col-sm-3 col-md-3 d-flex align-items-center justify-content-center p-3">
+                                    <div class="border border-white rounded-circle">
+                                        <img src="../img/vaga-img-placeholder.avif"
+                                            class="img-fluid rounded-circle w-100 img-vagas" 
+                                            alt="Job position image">
+                                    </div>
                                 </div>
                                 <div class="col-12 col-sm-9 col-md-9">
                                     <div class="card-body">
                                         <h5 class="card-title">Special title treatment</h5>
-                                        <p class="card-text">With supporting text below as a natural lead-in to
-                                            additional
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, accusamus? Voluptatum ratione est recusandae quo blanditiis inventore fugit error hic, officia adipisci facilis ullam necessitatibus numquam non! Dolore, quidem perspiciatis?
                                             content.</p>
                                         <a href="#" class="btn btn-black text-white border border-white">Go somewhere</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Card end-->
                     </li>
                 </ul>
             </div>
@@ -151,7 +161,7 @@
                 <!-- Logo Column -->
                 <div class="col-12 col-md-2 text-center text-md-start">
                     <a href="#">
-                        <img src="../img/logo-pcdev.png" class="img-fluid" alt="logo do site PcDev"
+                        <img src="../img/logo-pcdev-high-contrast.png" class="img-fluid" alt="logo do site PcDev"
                             style="max-width: 80px;">
                     </a>
                 </div>
