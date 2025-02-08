@@ -55,25 +55,6 @@
 }
 
 
-
-/* FOOTER: SOCIAL MEDIA ICONS */
-.social-media-icons {
-    width: 38px;
-    height: 38px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-}
-
-/* FOOTER: FULL BLEED DOWN */
-.full-bleed-down {
-    box-shadow: 0 0 0 100vmax var(--primary-color);
-    clip-path: inset(0 0 -100vmax 0);
-}
-
-
-
 /* NAVBAR: LOGO SIZE */
 .navbar-brand {
     position: relative;
@@ -140,4 +121,29 @@
 .form-check-input:focus {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 0.25rem rgba(var(--primary-color-rgb), 0.25);
+}
+
+
+
+
+/* FOOTER: SOCIAL MEDIA ICONS */
+.social-media-icons {
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+/* FOOTER: FULL BLEED DOWN */
+.full-bleed-down {
+    box-shadow: 0 0 0 100vmax var(--primary-color);
+    clip-path: inset(0 0 -100vmax 0);
+}
+
+/* FOOTER: HIGH-CONTRAST PAGE bleed color override */
+#footer-full-bleed {
+    box-shadow: 0 0 0 100vmax #000;
+    border-top: 1px solid var(--secondary-color); /* Added white border on top */
 }
