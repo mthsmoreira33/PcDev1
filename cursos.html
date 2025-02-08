@@ -11,7 +11,7 @@
     <!-- Font Awesome icons-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="src/css/styles.css">
-    <title>Vagas</title>
+    <title>Cursos</title>
 </head>
 
 <body>
@@ -35,10 +35,10 @@
                     <ul class="navbar-nav text-center align-items-center gap-2">
                         <li class="nav-item">
                             <a class="nav-link active text-light hover-effect active" aria-current="page"
-                                href="#">Vagas</a>
+                                href="vagas.html">Vagas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light hover-effect" href="cursos.html">Cursos</a>
+                            <a class="nav-link text-light hover-effect" href="#">Cursos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light hover-effect" href="#">Plugins</a>
@@ -46,7 +46,8 @@
                         <li class="nav-item">
                             <ul class="d-flex text-center align-items-center justify-content-around list-unstyled">
                                 <li class="nav-item">
-                                    <a class="nav-link active text-light" aria-current="page" href="high-contrast/high-contrast-vagas.html" title="Alto-contraste">
+                                    <a class="nav-link active text-light" aria-current="page" href="#"
+                                        title="Alto-contraste">
                                         <i class="fa-solid fa-circle-half-stroke hover-effect"></i>
                                     </a>
                                 </li>
@@ -80,20 +81,10 @@
                             </button>
                         </div>
                     </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="inputGroupSelect01">Formato</label>
-                        </div>
-                        <select class="custom-select" id="inputGroupSelect01">
-                            <option selected>Híbrido</option>
-                            <option value="1">Remoto</option>
-                            <option value="2">Home Office</option>
-                            <option value="3">Temporário</option>
-                        </select>
-                    </div>
-                    <label for="customRange3" class="form-label">Salário</label>
+                    <label for="customRange3" class="form-label">Carga Horária</label>
                     <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
                     <div class="pb-2">
+                        <label for="customRange3" class="form-label">Disciplina</label>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Front-End</label>
@@ -126,8 +117,7 @@
                             <div class="row">
                                 <div class="col-12 col-sm-3 col-md-3 d-flex align-items-center justify-content-center py-3">
                                     <img src="img/vaga-img-placeholder.avif"
-                                    class="img-fluid rounded-circle w-100 img-vagas"
-                                    alt="Job position image">
+                                        class="img-fluid rounded-circle w-100 img-vagas" alt="Job position image">
                                 </div>
                                 <div class="col-12 col-sm-9 col-md-9">
                                     <div class="card-body">
