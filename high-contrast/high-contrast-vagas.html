@@ -1,202 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <!-- Font Awesome icons-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../src/css/styles.css">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/css/styles.css" />
     <title>Vagas</title>
-</head>
-<body class="bg-black text-light">
+  </head>
+  <body class="bg-black text-light">
     <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
     </div>
     <header>
-        <nav class="navbar navbar-expand-lg bg-black border-bottom border-white">
-            <div class="container-fluid">
-                <a class="navbar-brand text-light" href="#"><img src="../img/logo-pcdev-high-contrast.png" class="img-fluid"
-                        alt="logo PCDEV com a palavra PC na cor azul claro, a palavra EV na cor laranja e a letra D dividida  em azul em cima e laranja em baixo."></a>
-                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="bi bi-list"></i>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav text-center align-items-center gap-2">
-                        <li class="nav-item">
-                            <a class="nav-link active text-light hover-effect active" aria-current="page"
-                                href="#">Vagas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light hover-effect" href="#">Cursos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light hover-effect" href="#">Plugins</a>
-                        </li>
-                        <li class="nav-item">
-                            <ul class="d-flex text-center align-items-center justify-content-around list-unstyled">
-                                <li class="nav-item">
-                                    <a class="nav-link active text-light" aria-current="page" href="../vagas.html"
-                                        title="Alto-contraste">
-                                        <i class="fa-solid fa-circle-half-stroke hover-effect"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light" href="#" title="Meu Perfil">
-                                        <i class="fa-solid fa-user hover-effect"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light" href="high-contrast-login.html" title="Logout">
-                                        <i class="fa-solid fa-right-from-bracket hover-effect"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg bg-black border-bottom border-white">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#"
+            ><img
+              src="../img/logo-pcdev-high-contrast.png"
+              class="img-fluid"
+              alt="logo PCDEV com a palavra PC na cor azul claro, a palavra EV na cor laranja e a letra D dividida  em azul em cima e laranja em baixo."
+          /></a>
+          <button
+            class="navbar-toggler text-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav text-center align-items-center gap-2">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light hover-effect active"
+                  aria-current="page"
+                  href="#"
+                  >Vagas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light hover-effect" href="#">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light hover-effect" href="#">Plugins</a>
+              </li>
+              <li class="nav-item">
+                <ul
+                  class="d-flex text-center align-items-center justify-content-around list-unstyled"
+                >
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active text-light"
+                      aria-current="page"
+                      href="../vagas.html"
+                      title="Alto-contraste"
+                    >
+                      <i
+                        class="fa-solid fa-circle-half-stroke hover-effect"
+                      ></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#" title="Meu Perfil">
+                      <i class="fa-solid fa-user hover-effect"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light"
+                      href="high-contrast-login.html"
+                      title="Logout"
+                    >
+                      <i
+                        class="fa-solid fa-right-from-bracket hover-effect"
+                      ></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main class="container py-5">
-        <div class="row">
-            <aside class="col-lg-3 col-sm-12 pb-5 px-5">
-                <form class="w-100 d-flex flex-column justify-content-center">
-                    <!-- Search input group -->
-                    <div class="input-group mb-3 w-100">
-                        <input type="search" id="search-box" class="form-control" placeholder="Pesquisa" aria-label="Search">
-                        <button type="button" class="btn btn-primary" title="Pesquisar" id="inline-button">
-                            <i class="bi bi-search"></i>
-                        </button>
-                    </div>
-                    <!-- Format select group -->
-                    <div class="input-group mb-3 w-100">
-                        <label class="input-group-text rounded-start" for="format-group-select">Formato</label>
-                        <select class="form-select rounded-end" id="format-group-select">
-                            <option selected>Híbrido</option>
-                            <option value="1">Remoto</option>
-                            <option value="2">Home Office</option>
-                            <option value="3">Temporário</option>
-                        </select>
-                    </div>
-                    <!-- Salary range -->
-                    <div class="w-100 mb-3">
-                        <label for="custom-range-3" class="form-label w-100">Salário</label>
-                        <input type="range" class="form-range w-100" min="0" max="5" step="0.5" id="custom-range-3">
-                    </div>
-                    <!-- Skills checkbox group -->
-                    <div class="pb-2">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="skill-check">
-                            <label class="form-check-label" for="skill-check">Front-End</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="skill-check">
-                            <label class="form-check-label" for="skill-check">Back-End</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="skill-check">
-                            <label class="form-check-label" for="skill-check">QA</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="skill-check">
-                            <label class="form-check-label" for="skill-check">UX/UI Designer</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="skill-check">
-                            <label class="form-check-label" for="skill-check">DBA</label>
-                        </div>
-                    </div>
-                    <!-- Submit button -->
-                    <button type="submit" class="btn btn-primary w-75 mt-4 mx-auto">Filtrar</button>
-                </form>
-            </aside>
-            <div class="col-lg-9 col-sm-12 px-5 container-fluid">
-                <ul class="list-unstyled">
-                    <li class="list-item">
-                        <!-- Card -->
-                        <div class="card mb-3 bg-black text-white border border-white">
-                            <h5 class="card-header text-center">Featured</h5>
-                            <div class="row">
-                                <div class="col-12 col-sm-3 col-md-3 d-flex align-items-center justify-content-center py-3">
-                                    <img src="../img/vaga-img-placeholder.avif"
-                                        class="img-fluid rounded-circle w-100 img-vagas border border-white" alt="Job position image">
-                                </div>
-                                <div class="col-12 col-sm-9 col-md-9">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Special title treatment</h5>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                        <a href="#" class="btn btn-black text-white border border-white">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card end-->
-                    </li>
-                </ul>
+      <div class="row">
+        <aside class="col-lg-3 col-sm-12 pb-5 px-5">
+          <form class="w-100 d-flex flex-column justify-content-center">
+            <!-- Search input group -->
+            <div class="input-group mb-3 w-100">
+              <input
+                type="search"
+                id="search-box"
+                class="form-control"
+                placeholder="Pesquisa"
+                aria-label="Search"
+              />
+              <button
+                type="button"
+                class="btn btn-primary"
+                title="Pesquisar"
+                id="inline-button"
+              >
+                <i class="bi bi-search"></i>
+              </button>
             </div>
+            <!-- Format select group -->
+            <div class="input-group mb-3 w-100">
+              <label
+                class="input-group-text rounded-start"
+                for="format-group-select"
+                >Formato</label
+              >
+              <select class="form-select rounded-end" id="format-group-select">
+                <option selected>Híbrido</option>
+                <option value="1">Remoto</option>
+                <option value="2">Home Office</option>
+                <option value="3">Temporário</option>
+              </select>
+            </div>
+            <!-- Salary range -->
+            <div class="w-100 mb-3">
+              <label for="custom-range-3" class="form-label w-100"
+                >Salário</label
+              >
+              <input
+                type="range"
+                class="form-range w-100"
+                min="0"
+                max="5"
+                step="0.5"
+                id="custom-range-3"
+              />
+            </div>
+            <!-- Skills checkbox group -->
+            <div class="pb-2">
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="skill-check"
+                />
+                <label class="form-check-label" for="skill-check"
+                  >Front-End</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="skill-check"
+                />
+                <label class="form-check-label" for="skill-check"
+                  >Back-End</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="skill-check"
+                />
+                <label class="form-check-label" for="skill-check">QA</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="skill-check"
+                />
+                <label class="form-check-label" for="skill-check"
+                  >UX/UI Designer</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="skill-check"
+                />
+                <label class="form-check-label" for="skill-check">DBA</label>
+              </div>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary w-75 mt-4 mx-auto">
+              Filtrar
+            </button>
+          </form>
+        </aside>
+        <div class="col-lg-9 col-sm-12 px-5 container-fluid">
+          <ul class="list-unstyled">
+            <li class="list-item">
+              <!-- Card -->
+              <div class="card mb-3 bg-black text-white border border-white">
+                <h5 class="card-header text-center">Featured</h5>
+                <div class="row">
+                  <div
+                    class="col-12 col-sm-3 col-md-3 d-flex align-items-center justify-content-center py-3"
+                  >
+                    <img
+                      src="../img/vaga-img-placeholder.avif"
+                      class="img-fluid rounded-circle w-100 img-vagas border border-white"
+                      alt="Job position image"
+                    />
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-9">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">
+                        With supporting text below as a natural lead-in to
+                        additional content.
+                      </p>
+                      <a
+                        href="#"
+                        class="btn btn-black text-white border border-white"
+                        >Go somewhere</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card end-->
+            </li>
+          </ul>
         </div>
+      </div>
     </main>
     <!-- FOOTER -->
     <footer class="footer bg-black py-4 full-bleed-down">
-        <div class="container-fluid px-4">
-            <div class="row gy-3 align-items-center">
-                <!-- Logo Column -->
-                <div class="col-12 col-md-2 text-center text-md-start">
-                    <a href="#">
-                        <img src="../img/logo-pcdev-high-contrast.png" class="img-fluid" alt="logo do site PcDev"
-                            style="max-width: 80px;">
-                    </a>
-                </div>
+      <div class="container-fluid px-4">
+        <div class="row gy-3 align-items-center">
+          <!-- Logo Column -->
+          <div class="col-12 col-md-2 text-center text-md-start">
+            <a href="#">
+              <img
+                src="../img/logo-pcdev-high-contrast.png"
+                class="img-fluid"
+                alt="logo do site PcDev"
+                style="max-width: 80px"
+              />
+            </a>
+          </div>
 
-                <!-- Copyright Column -->
-                <div class="col-12 col-md-8 text-center">
-                    <p class="text-light mb-0">© 2024 Copyright: Squad 17</p>
-                </div>
+          <!-- Copyright Column -->
+          <div class="col-12 col-md-8 text-center">
+            <p class="text-light mb-0">© 2024 Copyright: Squad 17</p>
+          </div>
 
-                <!-- Social Media Column -->
-                <div class="col-12 col-md-2">
-                    <div class="d-flex justify-content-center justify-content-md-end gap-2">
-                        <a href="#" class="btn btn-outline-secondary social-media-icons" title="Facebook Page">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="btn btn-outline-secondary social-media-icons" title="Twitter Page">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="btn btn-outline-secondary social-media-icons" title="Youtube Channel">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="#" class="btn btn-outline-secondary social-media-icons" title="Instagram Page">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="btn btn-outline-secondary social-media-icons" title="Linkedin Page">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
+          <!-- Social Media Column -->
+          <div class="col-12 col-md-2">
+            <div
+              class="d-flex justify-content-center justify-content-md-end gap-2"
+            >
+              <a
+                href="#"
+                class="btn btn-outline-secondary social-media-icons"
+                title="Facebook Page"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="btn btn-outline-secondary social-media-icons"
+                title="Twitter Page"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="btn btn-outline-secondary social-media-icons"
+                title="Youtube Channel"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a
+                href="#"
+                class="btn btn-outline-secondary social-media-icons"
+                title="Instagram Page"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="btn btn-outline-secondary social-media-icons"
+                title="Linkedin Page"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- SCRIPTS -->
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="src/js/script.js" defer></script>
-</body>
-
+  </body>
 </html>
