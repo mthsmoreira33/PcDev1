@@ -114,87 +114,55 @@
     <main class="container py-5">
       <div class="row">
         <aside class="col-lg-3 col-sm-12 pb-5 px-5">
-          <form>
-            <div class="input-group mb-3">
-              <input
-                type="search"
-                id="form1"
-                class="form-control"
-                placeholder="Pesquisa"
-                aria-label="Search"
-              />
-              <div class="input-group-append">
-                <button type="button" class="btn btn-primary" title="Pesquisar">
-                  <i class="bi bi-search"></i>
-                </button>
-              </div>
+          <form class="w-100 d-flex flex-column justify-content-center">
+            <!-- Search input group -->
+            <div class="input-group mb-3 w-100">
+              <input type="search" id="search-box" class="form-control" placeholder="Pesquisa" aria-label="Search" />
+              <button type="button" class="btn btn-primary" title="Pesquisar" id="inline-button">
+                <i class="bi bi-search"></i>
+              </button>
             </div>
-            <label for="customRange3" class="form-label">Carga Horária</label>
-            <input
-              type="range"
-              class="form-range"
-              min="0"
-              max="5"
-              step="0.5"
-              id="customRange3"
-            />
+            <!-- Salary range -->
+            <div class="w-100 mb-3">
+              <label for="custom-range-3" class="form-label w-100">Carga Horária</label>
+              <input type="range" class="form-range w-100" min="0" max="5" step="0.5" id="custom-range-3" />
+            </div>
+            <!-- Skills checkbox group -->
             <div class="pb-2">
-              <label for="customRange3" class="form-label">Disciplina</label>
+              <label for="form-check" class="form-label w-100">Disciplina</label>
               <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Front-End</label
-                >
+                <input type="checkbox" class="form-check-input" id="skill-check" />
+                <label class="form-check-label" for="skill-check">Front-End</label>
               </div>
               <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Back-End</label
-                >
+                <input type="checkbox" class="form-check-input" id="skill-check" />
+                <label class="form-check-label" for="skill-check">Back-End</label>
               </div>
               <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1">QA</label>
+                <input type="checkbox" class="form-check-input" id="skill-check" />
+                <label class="form-check-label" for="skill-check">QA</label>
               </div>
               <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                  >UX/UI Designer</label
-                >
+                <input type="checkbox" class="form-check-input" id="skill-check" />
+                <label class="form-check-label" for="skill-check">UX/UI Designer</label>
               </div>
               <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1">DBA</label>
+                <input type="checkbox" class="form-check-input" id="skill-check" />
+                <label class="form-check-label" for="skill-check">DBA</label>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary w-75 mt-4 mx-auto bg-dark">
+              Filtrar
+            </button>
           </form>
         </aside>
         <div class="col-lg-9 col-sm-12 px-5 container-fluid">
+          <h2 class="text-center">Cursos</h2>
           <ul class="list-unstyled">
             <li class="list-item">
-              <div class="card mb-3">
-                <h5 class="card-header">Front End Developer</h5>
+              <div class="card my-5">
+                <h5 class="card-header">HTML/CSS</h5>
                 <div class="row">
                   <div
                     class="col-12 col-sm-3 col-md-3 d-flex align-items-center justify-content-center py-3"
@@ -207,13 +175,36 @@
                   </div>
                   <div class="col-12 col-sm-9 col-md-9">
                     <div class="card-body">
-                      <h5 class="card-title">Business Inc.</h5>
+                      <h5 class="card-title">Cursos Inc.</h5>
                       <p class="card-text">
-                        Estamos em busca de um Desenvolvedor Front-End talentoso para se juntar à nossa equipe. O candidato ideal deve ter
-                        experiência em HTML, CSS e JavaScript, além de conhecimento em frameworks modernos como React ou Angular. Se você é
-                        apaixonado por criar interfaces de usuário incríveis e tem um olho para detalhes, queremos ouvir de você!
+                        Este curso de HTML e CSS é projetado para iniciantes que desejam aprender a criar sites modernos e responsivos. Você
+                        aprenderá os fundamentos do HTML para estruturar o conteúdo da web e o CSS para estilizar e layoutar suas páginas.
+                        Ao final do curso, você será capaz de construir sites completos e funcionais com boas práticas de design.
                       </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="card my-5">
+                <h5 class="card-header">Python</h5>
+                <div class="row">
+                  <div class="col-12 col-sm-3 col-md-3 d-flex align-items-center justify-content-center py-3">
+                    <img src="img/vaga-img-placeholder.avif" class="img-fluid rounded-circle w-100 img-vagas"
+                      alt="Job position image" />
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-9">
+                    <div class="card-body">
+                      <h5 class="card-title">Cursos Inc.</h5>
+                      <p class="card-text">
+                        Este curso de Python é projetado para iniciantes que desejam aprender a programar. Você
+                        aprenderá os fundamentos da linguagem Python, incluindo sintaxe, estruturas de controle, funções e
+                        manipulação de dados. Ao final do curso, você será capaz de escrever scripts Python eficientes e
+                        resolver problemas de programação com boas práticas.
+                      </p>
+                      <a href="#" class="btn btn-primary">Leia mais</a>
                     </div>
                   </div>
                 </div>
