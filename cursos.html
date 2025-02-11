@@ -23,7 +23,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/styles.css" />
-    <title>Vagas</title>
+    <title>Cursos</title>
   </head>
 
   <body>
@@ -36,7 +36,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand text-light" href="vagas.html"
+          <a class="navbar-brand text-light" href="#"
             ><img
               src="img/logo-pcdev.png"
               class="img-fluid"
@@ -62,14 +62,12 @@
                 <a
                   class="nav-link active text-light hover-effect active"
                   aria-current="page"
-                  href="#"
+                  href="vagas.html"
                   >Vagas</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light hover-effect" href="cursos.html"
-                  >Cursos</a
-                >
+                <a class="nav-link text-light hover-effect" href="#">Cursos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light hover-effect" href="#">Plugins</a>
@@ -82,7 +80,7 @@
                     <a
                       class="nav-link active text-light"
                       aria-current="page"
-                      href="high-contrast/high-contrast-vagas.html"
+                      href="high-contrast/high-contrast-cursos.html"
                       title="Alto-contraste"
                     >
                       <i
@@ -113,127 +111,106 @@
         </div>
       </nav>
     </header>
-
     <main class="container py-5">
       <div class="row">
         <aside class="col-lg-3 col-sm-12 pb-5 px-5">
-            <form class="w-100 d-flex flex-column justify-content-center">
-                <!-- Search input group -->
-                <div class="input-group mb-3 w-100">
-                    <input type="search" id="search-box" class="form-control" placeholder="Pesquisa" aria-label="Search" />
-                    <button type="button" class="btn btn-primary" title="Pesquisar" id="inline-button">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </div>
-                <!-- Format select group -->
-                <div class="input-group mb-3 w-100">
-                    <label class="input-group-text rounded-start" for="format-group-select">Formato</label>
-                    <select class="form-select rounded-end" id="format-group-select">
-                        <option selected>Híbrido</option>
-                        <option value="1">Remoto</option>
-                        <option value="2">Home Office</option>
-                        <option value="3">Temporário</option>
-                    </select>
-                </div>
-                <!-- Salary range -->
-                <div class="w-100 mb-3">
-                    <label for="custom-range-3" class="form-label w-100">Salário</label>
-                    <input type="range" class="form-range w-100" min="0" max="5" step="0.5" id="custom-range-3" />
-                </div>
-                <!-- Skills checkbox group -->
-                <div class="pb-2">
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="skill-check" />
-                        <label class="form-check-label" for="skill-check">Front-End</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="skill-check" />
-                        <label class="form-check-label" for="skill-check">Back-End</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="skill-check" />
-                        <label class="form-check-label" for="skill-check">QA</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="skill-check" />
-                        <label class="form-check-label" for="skill-check">UX/UI Designer</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="skill-check" />
-                        <label class="form-check-label" for="skill-check">DBA</label>
-                    </div>
-                </div>
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-primary w-75 mt-4 mx-auto bg-dark">
-                    Filtrar
-                </button>
-            </form>
+          <form class="w-100 d-flex flex-column justify-content-center">
+            <!-- Search input group -->
+            <div class="input-group mb-3 w-100">
+              <input type="search" id="search-box" class="form-control" placeholder="Pesquisa" aria-label="Search" />
+              <button type="button" class="btn btn-primary" title="Pesquisar" id="inline-button">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+            <!-- Salary range -->
+            <div class="w-100 mb-3">
+              <label for="custom-range-3" class="form-label w-100">Carga Horária</label>
+              <input type="range" class="form-range w-100" min="0" max="5" step="0.5" id="custom-range-3" />
+            </div>
+            <!-- Skills checkbox group -->
+            <div class="pb-2">
+              <label for="form-check" class="form-label w-100">Disciplina</label>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="skill-check" />
+                <label class="form-check-label" for="skill-check">Front-End</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="skill-check" />
+                <label class="form-check-label" for="skill-check">Back-End</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="skill-check" />
+                <label class="form-check-label" for="skill-check">QA</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="skill-check" />
+                <label class="form-check-label" for="skill-check">UX/UI Designer</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="skill-check" />
+                <label class="form-check-label" for="skill-check">DBA</label>
+              </div>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary w-75 mt-4 mx-auto bg-dark">
+              Filtrar
+            </button>
+          </form>
         </aside>
-
-        <!-- MAIN SECTION -->
         <div class="col-lg-9 col-sm-12 px-5 container-fluid">
-            <h2 class="text-center">Vagas</h2>
+          <h2 class="text-center">Cursos</h2>
           <ul class="list-unstyled">
             <li class="list-item">
-              <!-- Card -->
               <div class="card my-5">
-                <h5 class="card-header">Front End Developer</h5>
+                <h5 class="card-header">HTML/CSS</h5>
                 <div class="row">
                   <div
                     class="col-12 col-sm-3 col-md-3 d-flex align-items-center justify-content-center py-3"
                   >
                     <img
-                      src="img/vaga-img-placeholder.avif"
+                      src="img/htmlcss.avif"
                       class="img-fluid rounded-circle w-100 img-vagas"
-                      alt="Job position image"
+                      alt="HTML/CSS course image"
                       loading="lazy"
                     />
                   </div>
                   <div class="col-12 col-sm-9 col-md-9">
                     <div class="card-body">
-                      <h5 class="card-title">Business Inc.</h5>
+                      <h5 class="card-title">Cursos Inc.</h5>
                       <p class="card-text">
-                        Estamos em busca de um Desenvolvedor Front-End talentoso para se juntar à nossa equipe. O candidato ideal deve ter
-                        experiência em HTML, CSS e JavaScript, além de conhecimento em frameworks modernos como React ou Angular. Se você é
-                        apaixonado por criar interfaces de usuário incríveis e tem um olho para detalhes, queremos ouvir de você!
+                        Este curso de HTML e CSS é projetado para iniciantes que desejam aprender a criar sites modernos e responsivos. Você
+                        aprenderá os fundamentos do HTML para estruturar o conteúdo da web e o CSS para estilizar e layoutar suas páginas.
+                        Ao final do curso, você será capaz de construir sites completos e funcionais com boas práticas de design.
                       </p>
-                        <a href="#" class="btn btn-primary" aria-label="Leia Mais sobre a vaga de Front End Developer">Leia mais</a>
+                      <a href="#" class="btn btn-primary" aria-label="Leia Mais sobre o curso de HTML/CSS">Leia mais</a>
                     </div>
                   </div>
-
                 </div>
               </div>
-
             </li>
             <li class="list-item">
-                <!-- Card -->
-                <div class="card my-5">
-                    <h5 class="card-header">Machine Learning Engineer</h5>
-                    <div class="row">
-                        <div class="col-12 col-sm-3 col-md-3 d-flex align-items-center justify-content-center py-3">
-                            <img src="img/vaga-img-placeholder.avif" class="img-fluid rounded-circle w-100 img-vagas"
-                                alt="Job position image" loading="lazy" />
-                        </div>
-                        <div class="col-12 col-sm-9 col-md-9">
-                            <div class="card-body">
-                                <h5 class="card-title">Business Inc.</h5>
-                                <p class="card-text">
-                                    Estamos em busca de um Engenheiro de Machine Learning talentoso para se juntar à nossa equipe. O
-                                    candidato ideal deve ter
-                                    experiência em Python, bibliotecas de machine learning como TensorFlow ou PyTorch, e conhecimento em
-                                    algoritmos de aprendizado de máquina. Se você é
-                                    apaixonado por criar soluções inovadoras e tem um olho para detalhes, queremos ouvir
-                                    de você!
-                                </p>
-                                <a href="#" class="btn btn-primary" aria-label="Leia Mais sobre a vaga de Machine Learning Engineer">Leia mais</a>
-                            </div>
-                        </div>
-
+              <div class="card my-5">
+                <h5 class="card-header">Python</h5>
+                <div class="row">
+                  <div class="col-12 col-sm-3 col-md-3 d-flex align-items-center justify-content-center py-3">
+                    <img src="img/python.avif" class="img-fluid rounded-circle w-100 img-vagas"
+                      alt="Python course image" loading="lazy" />
+                  </div>
+                  <div class="col-12 col-sm-9 col-md-9">
+                    <div class="card-body">
+                      <h5 class="card-title">Cursos Inc.</h5>
+                      <p class="card-text">
+                        Este curso de Python é projetado para iniciantes que desejam aprender a programar. Você
+                        aprenderá os fundamentos da linguagem Python, incluindo sintaxe, estruturas de controle, funções e
+                        manipulação de dados. Ao final do curso, você será capaz de escrever scripts Python eficientes e
+                        resolver problemas de programação com boas práticas.
+                      </p>
+                      <a href="#" class="btn btn-primary" aria-label="Leia Mais sobre o curso de Python">Leia mais</a>
                     </div>
+                  </div>
                 </div>
-
+              </div>
             </li>
-
           </ul>
         </div>
       </div>
@@ -244,7 +221,7 @@
         <div class="row gy-3 align-items-center">
           <!-- Logo Column -->
           <div class="col-12 col-md-2 text-center text-md-start">
-            <a href="#">
+            <a href="vagas.html">
               <img
                 src="img/logo-pcdev.png"
                 class="img-fluid"
